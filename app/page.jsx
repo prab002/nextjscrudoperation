@@ -1,4 +1,9 @@
+import TopicList from "@/components/TopicList";
 
 export default function Home() {
-  return <h1>hello from next</h1>;
+  return (
+    <>
+      <TopicList />
+    </>
+  );
 }
