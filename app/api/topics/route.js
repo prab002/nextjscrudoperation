@@ -13,7 +13,7 @@ export async function GET() {
   await connectMongoDb();
   const topic = await Topic.find();
   return NextResponse.json({ topic });
-}
+} 
 
 export async function DELETE(request) {
   const id = request.nextUrl.searchParams.get("id");
